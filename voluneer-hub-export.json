@@ -1,0 +1,151 @@
+{
+  "badges" : {
+    "b1" : {
+      "description" : "Attended safety meeting",
+      "number_of_times_awarded" : 1,
+      "opportunity" : "o1",
+      "volunteers" : {
+        "v1" : 1
+      }
+    },
+    "o" : {
+      "o1" : {
+        "b1" : true
+      }
+    }
+  },
+  "hours" : {
+    "h1" : {
+      "non_verified_hours" : 4,
+      "redeemable_hours" : 12,
+      "verified_hours" : 12
+    },
+    "o" : {
+      "o1" : {
+        "v1" : "h1"
+      }
+    },
+    "v" : {
+      "v1" : {
+        "o1" : "h1"
+      }
+    }
+  },
+  "logs" : {
+    "l1" : {
+      "description" : "Cleaned dishes",
+      "logged_hours" : 12,
+      "opportunity" : "o1",
+      "validated" : true,
+      "volunteer" : "v1"
+    },
+    "l2" : {
+      "description" : "Served food",
+      "logged_hours" : 4,
+      "opportunity" : "o1",
+      "validated" : false,
+      "volunteer" : "v1"
+    },
+    "o" : {
+      "o1" : {
+        "non_validated" : {
+          "l2" : true
+        },
+        "v1" : {
+          "l1" : true,
+          "l2" : true
+        }
+      }
+    },
+    "v" : {
+      "v1" : {
+        "all" : {
+          "l1" : true,
+          "l2" : true
+        },
+        "o1" : {
+          "l1" : true,
+          "l2" : true
+        }
+      }
+    }
+  },
+  "opportunities" : {
+    "-KkRYjvZPZvxrgscxFQz" : {
+      "description" : "Hospital"
+    },
+    "-KkRvDZ_xwg-bmJfFZ9_" : {
+      "description" : "Street Cleaning"
+    },
+    "o1" : {
+      "description" : "Volunteer at the hospital",
+      "total_badges_awarded" : 1,
+      "total_verified_hours" : 12,
+      "volunteers" : {
+        "v1" : true
+      }
+    }
+  },
+  "perks" : {
+    "p1" : {
+      "description" : "Get 10% off next coffee",
+      "number_of_times_activated" : 1,
+      "volunteers" : {
+        "v1" : 1
+      }
+    }
+  },
+  "requirements" : {
+    "o" : {
+      "o1" : {
+        "p1" : {
+          "r1" : true,
+          "r2" : true
+        }
+      }
+    },
+    "p" : {
+      "p1" : {
+        "o1" : {
+          "r1" : true,
+          "r2" : true
+        }
+      }
+    },
+    "r1" : {
+      "required_redeemable_hours" : 10,
+      "required_redeemable_points" : 3,
+      "required_total_verified_hours" : 0,
+      "required_verified_hours" : 0
+    },
+    "r2" : {
+      "required_redeemable_hours" : 5,
+      "required_redeemable_points" : 3,
+      "required_total_verified_hours" : 0,
+      "required_verified_hours" : 50
+    }
+  },
+  "volunteers" : {
+    "v1" : {
+      "badges" : {
+        "b1" : 1
+      },
+      "name" : "Adi",
+      "opportunities" : {
+        "o1" : true
+      },
+      "perks" : {
+        "p1" : 1
+      },
+      "redeemable_points" : 2,
+      "total_verified_hours" : 12
+    },
+    "yDUpKwe3FFRjEsgWPeaily9tIoo1" : {
+      "hours" : 42,
+      "opportunities" : {
+        "-KkRYjvZPZvxrgscxFQz" : true,
+        "-KkRvDZ_xwg-bmJfFZ9_" : true
+      }
+    }
+  }
+}
