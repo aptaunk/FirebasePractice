@@ -10,3 +10,4 @@ additional steps:
 - npm install cors --save
 - firebase deploy --only functions
 - firebase serve
+- start a cron job using cron-job.org
